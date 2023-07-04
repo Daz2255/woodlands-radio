@@ -1,4 +1,17 @@
 "use strict";
+
+// GenreVote constructor function
+function GenreVote(name, genre) {
+  this.name = name;
+  this.genre = genre;
+}
+
+// DecadeVote constructor function
+function DecadeVote(name, decade) {
+  this.name = name;
+  this.decade = decade;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the genre images
   const genreImages = document.querySelectorAll(".genre-image");
@@ -80,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Check if the image has already been clicked or if the limit has been reached
       if (this.classList.contains("clicked") || decadeClickCount >= 3) {
-        return; // Do nothing if already clicked or limit reached
+        return;
       }
 
       // Add 'clicked' class to the image
@@ -229,24 +242,3 @@ new Chart(decadeChartCanvas, {
     ],
   },
 });
-
-// Create the refresh button element
-const refreshButton = document.createElement("button");
-refreshButton.id = "refreshButton";
-refreshButton.textContent = "Refresh";
-
-// Append the refresh button to the appropriate container or element
-// For example:
-document.body.appendChild(refreshButton);
-
-// Attach a click event listener to the refresh button
-function attachRefreshButtonListener() {
-  document
-    .getElementById("refreshButton")
-    .addEventListener("click", function () {
-      location.reload();
-    });
-}
-
-// Call the function to attach the event listener after the refresh button is created
-attachRefreshButtonListener();

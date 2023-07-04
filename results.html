@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Voting Results</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <h1>Woodlands Radio</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <section class="radioplayer">
+          <audio controls src="/assets/genre/disco.mp3"></audio>
+        </section>
+      </header>
+    </div>
+    <main class="voteresult">
+      <div class="genreres">
+        <div id="genreTableContainer"></div>
+        <canvas id="genreChartCanvas"></canvas>
+      </div>
+      <div class="decaderes">
+        <div id="decadeTableContainer"></div>
+        <canvas id="decadeChartCanvas"></canvas>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="testing.js"></script>
+  </body>
+</html>

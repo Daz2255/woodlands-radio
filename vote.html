@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Votes</title>
+  </head>
+  <body class="vote-body">
+    <div class="header-container">
+      <header>
+        <h1>Woodlands Radio</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vote.html">Vote</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <section class="radioplayer">
+          <audio controls src="/assets/genre/disco.mp3"></audio>
+        </section>
+      </header>
+    </div>
+    <main class="mainvote">
+      <div class="votinginfo">
+        <img
+          class="voteimg"
+          src="assets/images/yourvoice-removebg-preview.png"
+          alt="megaphone"
+        />
+        <p class="vottext">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem, harum fuga obcaecati nesciunt fugiat, numquam cumque
+          commodi suscipit iure repudiandae quibusdam placeat aliquid eaque,
+          possimus ad. Inventore suscipit aliquam placeat?
+        </p>
+        <img
+          class="recordmus"
+          src="assets/images/record2-removebg-preview.png"
+          alt="record with music notes"
+        />
+      </div>
+      <div class="collectvote">
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <div id="musicGenres">
+          <img
+            src="/assets/genre/rock.png"
+            alt="Rock"
+            class="genre-image"
+            data-genre="rock"
+          />
+          <img
+            src="/assets/genre/pop.png"
+            data-music="pop.mp3"
+            alt="Pop"
+            class="genre-image"
+            data-genre="pop"
+          />
+          <img
+            src="/assets/genre/classical.png"
+            alt="Classical"
+            class="genre-image"
+            data-genre="classical"
+          />
+          <img
+            src="/assets/genre/country.png"
+            alt="Country"
+            class="genre-image"
+            data-genre="country"
+          />
+          <img
+            src="/assets/genre/folk.png"
+            alt="Folk"
+            class="genre-image"
+            data-genre="folk"
+          />
+          <img
+            src="/assets/genre/disco.png"
+            alt="Disco"
+            class="genre-image"
+            data-genre="disco"
+          />
+          <img
+            src="/assets/genre/jazz.png"
+            alt="Jazz"
+            class="genre-image"
+            data-genre="jazz"
+          />
+          <img
+            src="/assets/genre/R&B.png"
+            alt="R&B"
+            class="genre-image"
+            data-genre="R&B"
+          />
+          <img
+            src="assets/genre/opera.png"
+            alt="Opera"
+            class="genre-image"
+            data-genre="opera"
+          />
+          <img
+            src="/assets/genre/soul.png"
+            alt="Soul"
+            class="genre-image"
+            data-genre="Soul"
+          />
+          <img
+            src="/assets/genre/dance.png"
+            alt="Dance"
+            class="genre-image"
+            data-genre="Dance"
+          />
+          <img
+            src="/assets/genre/swing.png"
+            alt="Swing"
+            class="genre-image"
+            data-genre="swing"
+          />
+        </div>
+
+        <div id="musicDecades">
+          <img
+            src="/assets/decades/1940's.png"
+            alt="1940s"
+            class="decade-image"
+            data-decade="1940s"
+          />
+          <img
+            src="/assets/decades/1950's.png"
+            alt="1950s"
+            class="decade-image"
+            data-decade="1950s"
+          />
+          <img
+            src="/assets/decades/1960's.png"
+            alt="1960s"
+            class="decade-image"
+            data-decade="1960s"
+          />
+          <img
+            src="/assets/decades/1970's.png"
+            alt="1970s"
+            class="decade-image"
+            data-decade="1970s"
+          />
+          <img
+            src="/assets/decades/1980's.png"
+            alt="1980s"
+            class="decade-image"
+            data-decade="1980s"
+          />
+          <img
+            src="/assets/decades/1990's.png"
+            alt="1990s"
+            class="decade-image"
+            data-decade="1990s"
+          />
+          <img
+            src="/assets/decades/2000's.png"
+            alt="2000s"
+            class="decade-image"
+            data-decade="2000s"
+          />
+          <img
+            src="/assets/decades/2010's.png"
+            alt="2010s"
+            class="decade-image"
+            data-decade="2010s"
+          />
+          <img
+            src="/assets/decades/2020's.png"
+            alt="2020s"
+            class="decade-image"
+            data-decade="2020s"
+          />
+        </div>
+        <button id="refreshButton" style="display: none">Vote Again</button>
+      </div>
+      <script>
+        // Attach a click event listener to the refresh button
+        document
+          .getElementById("refreshButton")
+          .addEventListener("click", function () {
+            location.reload();
+          });
+      </script>
+    </main>
+    <footer class="vote-footer"></footer>
+    <script src="testing.js"></script>
+  </body>
+</html>
