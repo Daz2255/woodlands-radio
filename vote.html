@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <title>Votes</title>
@@ -38,10 +38,8 @@
           alt="megaphone"
         />
         <p class="vottext">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, harum fuga obcaecati nesciunt fugiat, numquam cumque
-          commodi suscipit iure repudiandae quibusdam placeat aliquid eaque,
-          possimus ad. Inventore suscipit aliquam placeat?
+          Enter your name and click to spin to choose your favorite 3 music
+          genres and decades.
         </p>
         <img
           class="recordmus"
@@ -57,6 +55,7 @@
             alt="Rock"
             class="genre-image"
             data-genre="rock"
+            data-file="assets/genre/rock.mp3"
           />
           <img
             src="assets/genre/pop.png"
@@ -64,66 +63,99 @@
             alt="Pop"
             class="genre-image"
             data-genre="pop"
+            data-file="assets/genre/pop.mp3"
           />
           <img
             src="assets/genre/classical.png"
-            alt="Classical"
             class="genre-image"
             data-genre="classical"
+            data-file="assets/genre/classical.mp3"
+            alt="Classical"
           />
           <img
             src="assets/genre/country.png"
             alt="Country"
             class="genre-image"
             data-genre="country"
+            data-file="assets/genre/country.mp3"
           />
+
           <img
             src="assets/genre/folk.png"
             alt="Folk"
             class="genre-image"
             data-genre="folk"
+            data-file="assets/genre/folk.mp3"
           />
           <img
             src="assets/genre/disco.png"
             alt="Disco"
             class="genre-image"
             data-genre="disco"
+            data-file="assets/genre/disco.mp3"
           />
           <img
             src="assets/genre/jazz.png"
             alt="Jazz"
             class="genre-image"
             data-genre="jazz"
+            data-file="assets/genre/jazz.mp3"
           />
           <img
             src="assets/genre/R&B.png"
             alt="R&B"
             class="genre-image"
             data-genre="R&B"
+            data-file="assets/genre/r&b.mp3"
           />
           <img
             src="assets/genre/opera.png"
             alt="Opera"
             class="genre-image"
             data-genre="opera"
+            data-file="assets/genre/opera.mp3"
           />
           <img
             src="assets/genre/soul.png"
             alt="Soul"
             class="genre-image"
             data-genre="Soul"
+            data-file="assets/genre/soul.mp3"
           />
           <img
             src="assets/genre/dance.png"
             alt="Dance"
             class="genre-image"
             data-genre="Dance"
+            data-file="assets/genre/dance.mp3"
           />
           <img
             src="assets/genre/swing.png"
             alt="Swing"
             class="genre-image"
             data-genre="swing"
+            data-file="assets/genre/swing.mp3"
+          />
+          <img
+            src="assets/genre/reggae.png"
+            alt="Reggae"
+            class="genre-image"
+            data-genre="reggae"
+            data-file="assets/genre/reggae.mp3"
+          />
+          <img
+            src="assets/genre/funk.png"
+            alt="Funk"
+            class="genre-image"
+            data-genre="funk"
+            data-file="assets/genre/funk.mp3"
+          />
+          <img
+            src="assets/genre/metal.png"
+            alt="Metal"
+            class="genre-image"
+            data-genre="metal"
+            data-file="assets/genre/metal.mp3"
           />
         </div>
 
@@ -184,17 +216,18 @@
           />
         </div>
         <button id="refreshButton" style="display: none">Vote Again</button>
+        <script>
+          // Attach a click event listener to the refresh button
+          document
+            .getElementById("refreshButton")
+            .addEventListener("click", function () {
+              location.reload();
+            });
+        </script>
       </div>
-      <script>
-        // Attach a click event listener to the refresh button
-        document
-          .getElementById("refreshButton")
-          .addEventListener("click", function () {
-            location.reload();
-          });
-      </script>
     </main>
+    <audio id="hoverMusic" src="" type="audio/mp3"></audio>
     <footer class="vote-footer"></footer>
-    <script src="testing.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
