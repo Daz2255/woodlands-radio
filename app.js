@@ -240,9 +240,9 @@ new Chart(genreChartCanvas, {
 
 // Generate a table for decade votes
 const decadeTable = document.createElement("table");
-decadeTable.innerHTML = "<tr><th>Decade</th><th>Votes</th></tr>";
-genreTable.style.fontFamily = "Bebas Neue";
-genreTable.style.fontSize = "2rem";
+decadeTable.innerHTML = "<tr><th>Decade</th><th> </th><th>Votes</th></tr>";
+decadeTable.style.fontFamily = "Bebas Neue";
+decadeTable.style.fontSize = "2rem";
 
 for (const decade in decadeVotes) {
   const row = document.createElement("tr");
