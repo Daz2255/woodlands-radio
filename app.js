@@ -194,6 +194,7 @@ const genreTable = document.createElement("table");
 genreTable.innerHTML = "<tr><th>Genre</th><th>Votes</th></tr>";
 genreTable.style.fontFamily = "Bebas Neue";
 genreTable.style.fontSize = "2rem";
+genreTable.style.lineHeight = "1.2";
 
 for (const genre in genreVotes) {
   const row = document.createElement("tr");
@@ -243,6 +244,7 @@ const decadeTable = document.createElement("table");
 decadeTable.innerHTML = "<tr><th>Decade</th><th> </th><th>Votes</th></tr>";
 decadeTable.style.fontFamily = "Bebas Neue";
 decadeTable.style.fontSize = "2rem";
+decadeTable.style.lineHeight = "1.2";
 
 for (const decade in decadeVotes) {
   const row = document.createElement("tr");
