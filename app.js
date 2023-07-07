@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Increase the genre click count
       genreClickCount++;
 
-      // Add the genre to genreVotes object and increment the vote count
+      // Add the genre to genreVotes object and increase the vote count
       const genre = this.dataset.genre;
       genreVotes[genre] = (genreVotes[genre] || 0) + 1;
 
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Increase the decade click count
       decadeClickCount++;
 
-      // Add the decade to decadeVotes object and increment the vote count
+      // Add the decade to decadeVotes object and increase the vote count
       const decade = this.dataset.decade;
       decadeVotes[decade] = (decadeVotes[decade] || 0) + 1;
 
