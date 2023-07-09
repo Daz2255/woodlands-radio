@@ -32,6 +32,15 @@ function playAudioOnHover(file) {
   audioElement.src = file;
   audioElement.play();
 }
+// Function to add spinning animation on hover
+function addSpinAnimation(element) {
+  element.classList.add("spin-animation");
+}
+
+// Function to remove spinning animation on hover
+function removeSpinAnimation(element) {
+  element.classList.remove("spin-animation");
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the genre images
@@ -113,11 +122,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (file) {
           playAudioOnHover(file);
         }
+
+        // Add spinning animation on hover
+        addSpinAnimation(this);
       });
 
       // Add mouseleave event listeners to stop the audio on mouse leave
       image.addEventListener("mouseleave", function () {
         stopAudio();
+
+        // Remove spinning animation on mouseleave
+        removeSpinAnimation(this);
       });
     });
   });
